@@ -1,0 +1,6 @@
+Revision history for Perl extension Win32::ANSIConsole.
+
+0.01  01/11/2002
+	- original version; created by h2xs 1.21 with options
+		-A -X -n Win32::ANSIConsole version 0.01 beta
+

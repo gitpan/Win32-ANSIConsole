@@ -1,0 +1,40 @@
+Win32/ANSIConsole version 0.01
+==============================
+
+Windows NT/2000/XP does not support ANSI escape sequences in
+Win32 Console applications.
+This module emulate an ANSI console for the script which uses it.
+Only the escape codes of the ansi.sys driver has been implemented.
+
+This module can convert the characters from the code page cp1250
+to the code page cp850 (the so-called ANSI to OEM conversion).
+The conversion is not perfect but permits the display of the
+accented characters in the console like in a Windows-based editor.
+(others mapping between codepages on request...)
+
+It works on all Win32 platforms.
+
+Caution: this module is still in beta stage; don't use it in a
+production script.
+
+All suggestion or remark is welcome.
+
+DEPENDENCIES
+
+This module requires the module Win32::Console.
+
+INSTALLATION
+
+To install this module, just follow the usual procedure:
+
+   perl Makefile.PL
+   nmake
+   nmake test
+   nmake install
+
+COPYRIGHT AND LICENCE
+
+Copyright (c) 2002 J-L Morel. All rights reserved.
+
+This program is free software; you can redistribute it and/or
+modify it under the same terms as Perl itself.
